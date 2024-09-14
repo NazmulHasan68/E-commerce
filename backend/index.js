@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser')
 
 const app = express()
 app.use(cors(
-    { origin : process.env.FONEND_URL,
+    { origin : "https://e-commerce-fontendside.onrender.com",
         credentials : true
     }
 ))

@@ -36,7 +36,7 @@ const Login = () => {
     //submite login data
     const handleSubmit = async(e) =>{
         e.preventDefault()
-        const DataResponse = await fetch("http://localhost:8000/api/login",{
+        const DataResponse = await fetch(SummaryApi.SignIn.url,{
             method : SummaryApi.SignIn.method,
             credentials: 'include',
             headers:{

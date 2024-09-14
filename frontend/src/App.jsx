@@ -36,7 +36,7 @@ function App() {
       credentials: 'include'
     })
     const dataApi = await response.json()
-    stcardproductcount(dataApi.data.count)
+    stcardproductcount(dataApi?.data?.count)
     
   }
 
